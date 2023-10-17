@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferences Page | iCodeThis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/icodethis.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="d-flex jc-center ai-center fw-wrap">
+    <main class="wrapper">
+        <header class="d-flex ai-center bg-W jc-between fw-wrap b-bt" style="    position: relative;top: -3px;">
+            <div class="parts d-flex ai-center">
+                <button class="" id="nav-btn"><i class="bi bi-list p-1 ts-1"></i></button>
+                <ul class="display-none" id="nav-expand">
+                    <li class="m-2 color-TL hoverable" value="nav"  onmouseenter="focusing('nav', 0)">Discover</li>
+                    <li class="m-2 color-TL hoverable" value="nav"  onmouseenter="focusing('nav', 1)">Live</li>
+                    <li class="m-2 color-TL hoverable" value="nav"  onmouseenter="focusing('nav', 2)">Jobs</li>
+                    <li class="m-2 color-TL hoverable" value="nav"  onmouseenter="focusing('nav', 3)">Conferences</li>
+                </ul>
+            </div>
+            <div class="parts">
+                <ul class="d-flex fd-row">
+                    <li><button type="submit" class="p-2 color-TL">Log In</button></li>
+                    <li><button type="submit" class="p-2 color-TL active">Get Started</button></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="conference-body d-flex jc-center fd-column m-2">
+                <div class="head m-point5">
+                    <h4 class="m-point5"><span class="bg-G m-2 color-TL br">Conferences</span> / <span class="bg-G m-2 color-TL br">Bergen</span></h4>
+                    <h2 class="m-1">Conferences in Bergen</h2>
+                </div>
+                <ul class="d-flex fd-row m-point5 timestamp">
+                    <li class="p-1 color-TL br-2 hoverable" value="datestamp"  onmouseenter="focusing('datestamp', 0)">ALL</li>
+                    <li class="p-1 color-TL br-2 hoverable" value="datestamp"  onmouseenter="focusing('datestamp', 1)">TODAY</li>
+                    <li class="p-1 color-TL br-2 hoverable" value="datestamp"  onmouseenter="focusing('datestamp', 2)">THIS WEEK</li>
+                    <li class="p-1 color-TL br-2 hoverable" value="datestamp"  onmouseenter="focusing('datestamp', 3)">JUNE</li>
+                    <li class="p-1 color-TL br-2 hoverable" value="datestamp"  onmouseenter="focusing('datestamp', 4)">JULY</li>
+                </ul>
+                <div class="content p-point5 b-bt">
+                    <p class="m-1 color-TL">Mon, 22-Fri, 26 Jun 2020. Bergen</p>
+                    <h4 class="m-1">International Conference on Tests and Proofs (TAP)</h4>
+                </div>
+                <div class="content p-point5  b-bt">
+                    <p class="m-1 color-TL">Mon, 22-Fri, 26 Jun 2020. Bergen</p>
+                    <h4 class="m-1">European Conference on Modelling Foundations</h4>
+                </div>
+                <div class="content p-point5 b-bt">
+                    <p class="m-1 color-TL"><span class="color-TR">Postponed</span> Bergen</p>
+                    <h4 class="m-1">Conference on Graph Transformation</h4>
+                </div>
+                <div class="content p-point5 b-bt">
+                    <p class="m-1 color-TL">Mon, 22 - Fri. 26 Jun 2020. Bergen</p>
+                    <h4 class="m-1">International Conference on Tests and Proofs (TAP)</h4>
+                </div>
+                <div class="content p-point5 b-bt">
+                    <p class="m-1 color-TL"><span class="color-TR">Postponed</span></p>
+                    <h4 class="m-1">Scandinavian Logic Symposium (SLSS)</h4>
+                </div>
+            </div>
+
+            <div class="conference-aside d-flex jc-center ai-center fd-column">
+                <aside class="mt-3 bs br-2 d-flex jc-center ai-center fd-column fw-wrap">
+                    <div class="head m-1">
+                        <h4>Discover</h4>
+                    </div>
+                    <div class="body">
+                        <div class="parts p-1 mt-1 br-2 hoverable" value="aside"  onmouseenter="focusing('aside', 0)">
+                            <h5 class="fs-1point5"><i class="bi bi-box p-1 ts-1"></i>Business Intelligence</h5>
+                            <p class="color-TL">Historical current, and predictive views of business operations</p>
+                        </div>
+                        <div class="parts p-1 mt-1 br-2 hoverable" value="aside"  onmouseenter="focusing('aside', 1)">
+                            <h5 class="fs-1point5"><i class="bi bi-cart p-1 ts-1"></i>Commerce</h5>
+                            <p class="color-TL">Systems, goods and services, small and large scale.</p>
+                        </div>
+                        <div class="parts p-1 mt-1 br-2 hoverable" value="aside" onmouseenter="focusing('aside', 2)">
+                            <h5 class="fs-1point5"><i class="bi bi-people p-1 ts-1"></i>Human Resources</h5>
+                            <p class="color-TL">About people who make up the workforce of an organization</p>
+                        </div>
+                        <div class="parts p-1 mt-1 br-2 hoverable" value="aside"  onmouseenter="focusing('aside', 3)">
+                            <h5 class="fs-1point5"><i class="bi bi-archive p-1 ts-1"></i>Internet of Things</h5>
+                            <p class="color-TL">Human-to-human and human-to- computer interaction</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
